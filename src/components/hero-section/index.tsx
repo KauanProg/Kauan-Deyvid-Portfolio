@@ -7,6 +7,7 @@ import {
 } from "@phosphor-icons/react";
 
 import Blob from "/blob.svg";
+import Profile from "/minha-foto-2.png";
 
 const HeroSection = () => {
   return (
@@ -39,11 +40,12 @@ const HeroSection = () => {
             aplicações web e mobile de alto nível.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <a
               href="#projetos"
               className="
-                flex items-center gap-2
+                flex items-center justify-center gap-2
+                w-full sm:w-auto
                 bg-linear-to-r from-primary to-[#991519]
                 text-white px-6 py-3 rounded-lg shadow
                 hover:opacity-90 transition
@@ -57,7 +59,8 @@ const HeroSection = () => {
               href="/KAUAN DEYVID BEZERRA DE SOUSA - CURRÍCULO.pdf"
               download
               className="
-                flex items-center gap-2
+                flex items-center justify-center gap-2
+                w-full sm:w-auto
                 border border-primary text-primary px-6 py-3 rounded-lg
                 hover:bg-linear-to-r hover:from-primary hover:to-[#991519] hover:text-white
                 transition
@@ -108,7 +111,15 @@ const HeroSection = () => {
 
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-105 h-105 md:w-120 md:h-120 lg:w-135 lg:h-135 flex items-center justify-center">
+            <div
+              className="
+                relative
+                w-72 h-72
+                md:w-80 md:h-80
+                lg:w-135 lg:h-135
+                flex items-center justify-center
+              "
+            >
               <img
                 src={Blob}
                 alt="Blob decorativo"
@@ -116,12 +127,12 @@ const HeroSection = () => {
               />
 
               <img
-                src="/minha-foto-2.png"
+                src={Profile}
                 alt="Foto de perfil"
                 className="
                   relative
-                  w-72 h-72
-                  md:w-80 md:h-80
+                  w-56 h-56
+                  md:w-64 md:h-64
                   lg:w-88 lg:h-88
                   object-cover
                   rounded-full
