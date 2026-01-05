@@ -10,7 +10,10 @@ import Blob from "/blob.svg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center bg-white pt-20 md:pt-0" id="inicio">
+    <section
+      className="min-h-screen flex items-center bg-white pt-20 md:pt-0"
+      id="inicio"
+    >
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-red-100 font-medium text-sm">
@@ -37,10 +40,18 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10">
-            <button className="flex items-center gap-2 bg-linear-to-r from-primary to-[#991519] text-white px-6 py-3 rounded-lg shadow hover:opacity-90 transition">
+            <a
+              href="#projetos"
+              className="
+                flex items-center gap-2
+                bg-linear-to-r from-primary to-[#991519]
+                text-white px-6 py-3 rounded-lg shadow
+                hover:opacity-90 transition
+              "
+            >
               <FolderOpenIcon size={20} weight="bold" />
               Ver Projetos
-            </button>
+            </a>
 
             <a
               href="/KAUAN DEYVID BEZERRA DE SOUSA - CURRÍCULO.pdf"
@@ -105,7 +116,7 @@ const HeroSection = () => {
               />
 
               <img
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                src="/minha-foto-2.png"
                 alt="Foto de perfil"
                 className="
                   relative
