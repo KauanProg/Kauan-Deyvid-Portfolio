@@ -109,8 +109,7 @@ function ProjectsSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Ver repositório
-                    <ArrowSquareOut size={16} weight="bold" />
+                    Ver projeto
                   </a>
                 </div>
               </article>

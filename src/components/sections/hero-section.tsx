@@ -1,5 +1,6 @@
 ﻿import {
   Briefcase,
+  ArrowSquareOut,
   FolderSimple,
   GithubLogo,
   InstagramLogo,
@@ -89,18 +90,21 @@ const recentProjects = [
     description:
       "Nova estrutura com foco em identidade visual, performance e leitura clara.",
     tags: ["React", "Tailwind"],
+    repoUrl: "#",
   },
   {
     title: "API de autenticação",
     description:
       "Serviço REST com login, validação e organização da camada de domínio.",
     tags: ["Node.js", "JWT"],
+    repoUrl: "#",
   },
   {
     title: "Dashboard financeiro",
     description:
       "Painel com métricas, filtros e visualização rápida de dados importantes.",
     tags: ["Charts", "UI"],
+    repoUrl: "#",
   },
 ];
 const calendarYear = new Date().getFullYear();
@@ -445,6 +449,16 @@ const HeroSection = () => {
                         <h4 className="text-[1.05rem] font-bold tracking-[-0.04em] text-black">
                           {project.title}
                         </h4>
+
+                        <a
+                          href={project.repoUrl}
+                          className="grid h-10 w-10 shrink-0 place-items-center border border-[#061451] text-[#061451] transition hover:bg-[#061451] hover:text-white"
+                          aria-label={`Abrir repositório de ${project.title}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <ArrowSquareOut size={16} weight="bold" />
+                        </a>
 
                       </div>
 
