@@ -1,0 +1,38 @@
+<svg width="1200" height="848" viewBox="0 0 1200 848" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="848" fill="#050A22"/>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 H 0 V 60" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 286) rotate(90) scale(305 425)">
+      <stop stop-color="#2A3AA8" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#050A22" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 426) rotate(90) scale(190 310)">
+      <stop stop-color="#1D4ED8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#050A22" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="848" fill="url(#glowA)"/>
+  <rect width="1200" height="848" fill="url(#glowB)"/>
+  <rect width="1200" height="848" fill="url(#grid)"/>
+
+  <g opacity="0.8">
+    <rect x="420" y="238" width="60" height="60" fill="#3A46A8" fill-opacity="0.7"/>
+    <rect x="840" y="300" width="60" height="60" fill="#2F3D99" fill-opacity="0.55"/>
+    <rect x="300" y="360" width="60" height="60" fill="#24368F" fill-opacity="0.45"/>
+    <rect x="360" y="360" width="60" height="60" fill="#3240A0" fill-opacity="0.55"/>
+    <rect x="420" y="360" width="60" height="60" fill="#3543A6" fill-opacity="0.6"/>
+    <rect x="480" y="360" width="60" height="60" fill="#3A46A8" fill-opacity="0.7"/>
+    <rect x="540" y="360" width="60" height="60" fill="#29379A" fill-opacity="0.45"/>
+    <rect x="660" y="360" width="60" height="60" fill="#3845A8" fill-opacity="0.7"/>
+    <rect x="720" y="360" width="60" height="60" fill="#2C3997" fill-opacity="0.52"/>
+    <rect x="780" y="360" width="60" height="60" fill="#3542A4" fill-opacity="0.62"/>
+    <rect x="420" y="420" width="60" height="60" fill="#3341A4" fill-opacity="0.6"/>
+    <rect x="900" y="480" width="60" height="60" fill="#2A3894" fill-opacity="0.42"/>
+    <rect x="300" y="540" width="60" height="60" fill="#24358E" fill-opacity="0.36"/>
+    <rect x="660" y="540" width="60" height="60" fill="#283895" fill-opacity="0.42"/>
+    <rect x="780" y="540" width="60" height="60" fill="#2E3C9B" fill-opacity="0.48"/>
+    <rect x="600" y="600" width="60" height="60" fill="#323FA0" fill-opacity="0.52"/>
+  </g>
+</svg>
