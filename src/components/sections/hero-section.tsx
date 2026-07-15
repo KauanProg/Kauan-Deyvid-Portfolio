@@ -89,21 +89,18 @@ const recentProjects = [
     description:
       "Nova estrutura com foco em identidade visual, performance e leitura clara.",
     tags: ["React", "Tailwind"],
-    updatedAt: "Atualizado há 2 dias",
   },
   {
     title: "API de autenticação",
     description:
       "Serviço REST com login, validação e organização da camada de domínio.",
     tags: ["Node.js", "JWT"],
-    updatedAt: "Atualizado há 5 dias",
   },
   {
     title: "Dashboard financeiro",
     description:
       "Painel com métricas, filtros e visualização rápida de dados importantes.",
     tags: ["Charts", "UI"],
-    updatedAt: "Atualizado há 1 semana",
   },
 ];
 const calendarYear = new Date().getFullYear();
@@ -431,52 +428,44 @@ const HeroSection = () => {
                 </div>
               </section>
 
-              <div className="grid gap-4">
-                {recentProjects.map((project) => (
-                  <article
-                    key={project.title}
-                    className="group border border-[#d7deea] bg-white p-4 transition hover:-translate-y-px hover:border-[#a8bdd3] hover:shadow-[0_16px_30px_rgba(6,20,81,0.06)]"
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#009CC4]">
-                          Projeto recente
-                        </p>
-                        <h3 className="mt-3 text-[1.05rem] font-bold tracking-[-0.04em] text-black">
+              <section className="border border-[#d7deea] bg-white p-4 sm:p-5">
+                <div className="flex items-end justify-between gap-4 border-b border-[#edf2f7] pb-4">
+                  <h3 className="text-[1rem] font-bold tracking-[-0.04em] text-black sm:text-[1.05rem]">
+                    Principais projetos
+                  </h3>
+                </div>
+
+                <div className="mt-4 grid gap-4">
+                  {recentProjects.map((project) => (
+                    <article
+                      key={project.title}
+                      className="group border border-[#d7deea] bg-white p-4 transition duration-300 hover:-translate-y-px hover:border-[#a8bdd3] hover:shadow-[0_16px_30px_rgba(6,20,81,0.06)]"
+                    >
+                      <div className="flex items-center justify-between gap-4">
+                        <h4 className="text-[1.05rem] font-bold tracking-[-0.04em] text-black">
                           {project.title}
-                        </h3>
+                        </h4>
+
                       </div>
 
-                      <a
-                        href="#projetos"
-                        className="grid h-10 w-10 shrink-0 place-items-center border border-[#061451] text-[#061451] transition group-hover:bg-[#061451] group-hover:text-white"
-                        aria-label={`Ver projeto ${project.title}`}
-                      >
-                        <span className="text-[1rem] font-bold">↗</span>
-                      </a>
-                    </div>
+                      <p className="mt-3 max-w-none text-[0.92rem] leading-7 text-[#334155]">
+                        {project.description}
+                      </p>
 
-                    <p className="mt-3 max-w-md text-[0.92rem] leading-7 text-[#334155]">
-                      {project.description}
-                    </p>
-
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="border border-[#d7deea] px-3 py-1 text-[0.76rem] text-[#009CC4]"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    <p className="mt-4 text-[0.8rem] text-black/55">
-                      {project.updatedAt}
-                    </p>
-                  </article>
-                ))}
-              </div>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="border border-[#d7deea] bg-[#f8fbff] px-3 py-1 text-[0.76rem] text-[#009CC4]"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
 
             </div>
 

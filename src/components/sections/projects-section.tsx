@@ -1,45 +1,45 @@
 import { ArrowSquareOut, GithubLogo } from "@phosphor-icons/react"
 
 type ProjectCard = {
-  number: string
   title: string
   description: string
   tags: string[]
   tone: "dark" | "light" | "blue" | "sand"
+  repoUrl: string
 }
 
 const projects: ProjectCard[] = [
   {
-    number: "01",
     title: "Landing Pages",
     description:
       "Landing pages com foco em clareza, conversao e identidade visual consistente para apresentar produtos e servicos.",
     tags: ["React", "Tailwind", "UI"],
     tone: "dark",
+    repoUrl: "#",
   },
   {
-    number: "02",
     title: "Sistemas Web",
     description:
       "Interfaces de operacao e gestao pensadas para fluxo simples, navegacao clara e manutencao mais facil.",
     tags: ["React", "APIs", "Fluxo"],
     tone: "light",
+    repoUrl: "#",
   },
   {
-    number: "03",
     title: "Dashboards",
     description:
       "Paineis com leitura rapida de dados, hierarquia visual definida e componentes prontos para crescimento.",
     tags: ["Charts", "Data", "Insights"],
     tone: "blue",
+    repoUrl: "#",
   },
   {
-    number: "04",
     title: "APIs REST",
     description:
       "Backends organizados para autenticacao, integracao e evolucao tecnica sem perder previsibilidade.",
     tags: ["Node.js", "REST", "Auth"],
     tone: "sand",
+    repoUrl: "#",
   },
 ]
 
@@ -85,9 +85,6 @@ function ProjectsSection() {
                 </div>
 
                 <div className="p-5 sm:p-6">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#009CC4]">
-                    {project.number}
-                  </p>
                   <h3 className="mt-3 text-[1.18rem] font-bold tracking-[-0.04em] text-black sm:text-[1.3rem]">
                     {project.title}
                   </h3>
@@ -107,10 +104,13 @@ function ProjectsSection() {
                   </div>
 
                   <a
-                    href="#contato"
-                    className="mt-5 inline-flex h-11 items-center justify-center border border-[#061451] px-4 text-[0.9rem] font-semibold text-[#061451] transition hover:bg-[#061451] hover:text-white"
+                    href={project.repoUrl}
+                    className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 border border-[#061451] px-4 text-[0.9rem] font-semibold text-[#061451] transition hover:bg-[#061451] hover:text-white"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    Ver Projeto
+                    Ver repositório
+                    <ArrowSquareOut size={16} weight="bold" />
                   </a>
                 </div>
               </article>

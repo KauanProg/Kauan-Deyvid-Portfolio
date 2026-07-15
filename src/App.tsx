@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <HeroSection />
-      <ServicesSection />
-      <ProjectsSection />
       <AboutMeSection />
       <SoftSkillsSection />
+      <ServicesSection />
+      <ProjectsSection />
     </>
   )
 }
