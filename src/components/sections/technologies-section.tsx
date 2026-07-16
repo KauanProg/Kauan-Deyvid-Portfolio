@@ -135,8 +135,11 @@ function TechnologiesSection() {
                 tabIndex={0}
               >
                 <div
-                  className={`technology-circle flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-[#030B2F] text-white shadow-[0_6px_14px_rgba(3,11,47,0.1)] sm:h-12 sm:w-12 ${technology.floats ? "technology-gentle-float" : ""}`}
-                  style={{ "--technology-delay": technology.floatDelay ?? "0s" } as CSSProperties}
+                  className="technology-circle technology-gentle-float flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-[#030B2F] text-white shadow-[0_6px_14px_rgba(3,11,47,0.1)] sm:h-12 sm:w-12"
+                  style={{
+                    "--technology-delay": `${-(index * 0.73)}s`,
+                    "--technology-duration": `${6.6 + (index % 4) * 0.65}s`,
+                  } as CSSProperties}
                 >
                   <TechnologyLogo name={technology.name} />
                 </div>
