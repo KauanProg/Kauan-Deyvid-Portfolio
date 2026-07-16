@@ -49,10 +49,10 @@ function ExperienceSection() {
   return (
     <section
       id="experiencia"
-      className="relative overflow-hidden bg-[#0f0f10] text-white"
+      className="relative overflow-hidden bg-[#020304] text-white"
     >
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(0,156,196,0.1)_0%,transparent_28%),radial-gradient(circle_at_80%_12%,rgba(255,255,255,0.05)_0%,transparent_24%),linear-gradient(180deg,#111112_0%,#090909_100%)]" />
-      <div className="pointer-events-none absolute inset-0 opacity-[0.16] [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:64px_64px]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#030506_0%,#010202_100%)]" />
+      <div className="pointer-events-none absolute inset-0 opacity-[0.12] bg-[linear-gradient(rgba(93,126,130,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(93,126,130,0.18)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
       <div className="relative mx-auto w-full max-w-[1480px] px-4 py-16 sm:px-6 lg:px-10 lg:py-24 xl:px-12">
         <div className="mx-auto max-w-4xl text-center">
@@ -78,7 +78,7 @@ function ExperienceSection() {
                 key={item.period}
                 className="relative grid gap-8 lg:grid-cols-[minmax(0,1fr)_92px_minmax(0,1fr)] lg:gap-0"
               >
-                <div className="pointer-events-none absolute left-5 top-10 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-[#009CC4] bg-[#0f0f10] shadow-[0_0_0_8px_rgba(0,156,196,0.08)] lg:static lg:col-start-2 lg:row-start-1 lg:mx-auto lg:mt-[4.25rem] lg:translate-x-0" />
+                <div className="pointer-events-none absolute left-5 top-10 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-[#009CC4] bg-[#020304] shadow-[0_0_0_8px_rgba(0,156,196,0.08)] lg:static lg:col-start-2 lg:row-start-1 lg:mx-auto lg:mt-17 lg:translate-x-0" />
 
                 <div
                   className={`relative pl-9 lg:pl-0 ${
@@ -88,15 +88,15 @@ function ExperienceSection() {
                   }`}
                 >
                   <article
-                    className={`relative max-w-[620px] rounded-none border border-white/8 bg-[#1b1b1d] px-6 py-6 shadow-[0_22px_60px_rgba(0,0,0,0.28)] transition duration-300 hover:-translate-y-1 hover:border-[#009CC4]/35 hover:shadow-[0_26px_70px_rgba(0,0,0,0.34)] motion-reduce:transition-none ${
+                    className={`relative max-w-[620px] rounded-none border border-white/8 bg-[#1b1b1d] px-6 py-6 shadow-none transition duration-300 hover:-translate-y-1 hover:border-[#009CC4]/35 hover:shadow-none motion-reduce:transition-none ${
                       item.side === "right" ? "lg:ml-auto" : ""
                     }`}
                   >
                     <div
-                      className={`pointer-events-none absolute top-12 z-10 h-0 w-0 -translate-y-1/2 border-y-[9px] border-y-transparent lg:top-[4.75rem] ${
+                      className={`pointer-events-none absolute top-12 z-10 h-0 w-0 -translate-y-1/2 border-y-[9px] border-y-transparent lg:top-19 ${
                         item.side === "left"
-                          ? "-left-[1px] border-r-[11px] border-r-[#1b1b1d] lg:-right-[11px] lg:left-auto lg:border-r-0 lg:border-l-[11px] lg:border-l-[#1b1b1d]"
-                          : "-left-[1px] border-r-[11px] border-r-[#1b1b1d] lg:-left-[11px]"
+                          ? "-left-px border-r-11 border-r-[#1b1b1d] lg:right-[-11px] lg:left-auto lg:border-r-0 lg:border-l-11 lg:border-l-[#1b1b1d]"
+                          : "-left-px border-r-11 border-r-[#1b1b1d] lg:left-[-11px]"
                       }`}
                     />
 

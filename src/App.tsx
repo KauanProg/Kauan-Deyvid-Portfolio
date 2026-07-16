@@ -4,6 +4,7 @@ import ProjectsSection from './components/sections/projects-section'
 import AboutMeSection from './components/sections/about-me-section'
 import SoftSkillsSection from './components/sections/soft-skills-section'
 import ExperienceSection from './components/sections/experience-section'
+import TechnologiesSection from './components/sections/technologies-section'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <AboutMeSection />
       <SoftSkillsSection />
+      <TechnologiesSection />
       <ServicesSection />
       <ProjectsSection />
       <ExperienceSection />
