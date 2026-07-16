@@ -343,7 +343,7 @@ const HeroSection = () => {
             </div>
 
             <div
-              id="experiencia"
+              id="destaques"
               className="grid gap-6 border-t border-[#e0e7f3] px-4 py-6 lg:grid-cols-[0.94fr_1.06fr] sm:px-7 sm:py-8"
             >
               <section className="border border-[#d7deea] bg-white p-4 sm:p-5">
