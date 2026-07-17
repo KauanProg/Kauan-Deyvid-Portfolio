@@ -7,6 +7,7 @@ import ExperienceSection from './components/sections/experience-section'
 import TechnologiesSection from './components/sections/technologies-section'
 import TestimonialsSection from './components/sections/testimonials-section'
 import ContactSection from './components/sections/contact-section'
+import FooterSection from './components/sections/footer-section'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <TestimonialsSection />
       <ExperienceSection />
       <ContactSection />
+      <FooterSection />
     </>
   )
 }
