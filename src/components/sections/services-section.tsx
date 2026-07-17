@@ -151,7 +151,7 @@ function ServicesSection() {
 
       <div className="relative mx-auto w-full max-w-[1320px] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#009CC4]">
+          <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
             Servicos
           </p>
           <h2 className="mx-auto mt-4 max-w-3xl text-[2rem] font-black tracking-[-0.065em] text-black sm:text-[3.25rem] sm:leading-[1.02]">

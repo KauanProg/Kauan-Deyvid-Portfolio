@@ -98,9 +98,11 @@ function TechnologiesSection() {
           className={`technology-composition relative mx-auto aspect-4/5 min-h-[680px] w-full overflow-hidden sm:aspect-16/10 lg:aspect-video lg:min-h-0 ${isVisible ? "technology-composition--visible" : ""}`}
         >
           <header className="absolute inset-x-4 top-[6%] z-30 mx-auto text-center sm:inset-x-10">
-            <p className="text-[0.68rem] font-bold uppercase tracking-[0.38em] text-[#536079]">Tecnologias</p>
-            <h2 className="mx-auto mt-3 max-w-3xl text-[clamp(1.85rem,3vw,3.25rem)] font-black leading-[1.04] tracking-[-0.06em] text-[#030B2F]">
-              Tecnologias que fazem parte da <span className="text-[#087CF0]">minha jornada</span>
+            <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
+              Tecnologias
+            </p>
+            <h2 className="mx-auto mt-3 max-w-3xl text-[clamp(1.95rem,3.2vw,3.6rem)] font-black leading-[0.98] tracking-[-0.06em] text-black">
+              Tecnologias que fazem parte da <span className="text-black">minha jornada</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[0.94rem] leading-7 text-[#667085] sm:text-[1.04rem]">
               Ferramentas que utilizo para desenvolver aplicações modernas, escaláveis e eficientes.

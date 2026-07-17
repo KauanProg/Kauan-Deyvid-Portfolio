@@ -56,7 +56,7 @@ function ExperienceSection() {
 
       <div className="relative mx-auto w-full max-w-[1480px] px-4 py-16 sm:px-6 lg:px-10 lg:py-24 xl:px-12">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.38em] text-[#009CC4]">
+          <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
             Experiência
           </p>
           <h2 className="mx-auto mt-4 max-w-4xl text-[clamp(2.1rem,4vw,4.8rem)] font-black leading-[0.94] tracking-[-0.08em] text-white">

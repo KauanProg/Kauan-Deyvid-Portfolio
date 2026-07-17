@@ -40,7 +40,7 @@ function TestimonialsSection() {
     >
       <div className="relative mx-auto flex w-full max-w-[1100px] flex-col items-center px-4 py-16 text-center sm:px-6 lg:px-10 lg:py-24 xl:px-12">
         <div className="mx-auto max-w-3xl">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.38em] text-[#009CC4]">
+          <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
             Depoimentos
           </p>
           <h2

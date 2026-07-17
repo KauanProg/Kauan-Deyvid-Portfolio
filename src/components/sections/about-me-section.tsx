@@ -151,7 +151,7 @@ function AboutMeSection({
             <div className="max-w-[900px]">
               <div className="mt-7 min-h-[220px] sm:min-h-[200px]">
                 <div key={activePage.number} className="about-page-panel">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.38em] text-[#009CC4]">
+                  <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
                     SOBRE MIM
                   </p>
                   <p className="mt-4 max-w-4xl text-[clamp(1.8rem,3vw,2.75rem)] font-black tracking-[-0.06em] text-black">

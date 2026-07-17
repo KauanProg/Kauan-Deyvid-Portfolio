@@ -32,7 +32,7 @@ function SoftSkillsSection() {
               >
                 <div className="flex items-start gap-4">
                   <div>
-                    <p className="text-[0.72rem] font-semibold uppercase tracking-[0.34em] text-[#009CC4]">
+                    <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
                       {skill.number}
                     </p>
                     <h3 className="mt-3 text-[1.05rem] font-bold tracking-[-0.03em] text-black">
@@ -49,8 +49,8 @@ function SoftSkillsSection() {
           </div>
 
           <div className="max-w-3xl lg:justify-self-end">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.38em] text-[#009CC4]">
-              Soft skills
+            <p className="inline-flex h-7 items-center bg-[#f1f5f9] px-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#061451]">
+              Habilidades Comportamentais
             </p>
             <h2 className="mt-4 max-w-2xl text-[clamp(2.2rem,4vw,4.6rem)] font-black leading-[0.92] tracking-[-0.08em] text-black">
               Como eu colaboro, organizo e entrego
