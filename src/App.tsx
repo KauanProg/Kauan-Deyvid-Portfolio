@@ -5,6 +5,7 @@ import AboutMeSection from './components/sections/about-me-section'
 import SoftSkillsSection from './components/sections/soft-skills-section'
 import ExperienceSection from './components/sections/experience-section'
 import TechnologiesSection from './components/sections/technologies-section'
+import TestimonialsSection from './components/sections/testimonials-section'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <TechnologiesSection />
       <ServicesSection />
       <ProjectsSection />
+      <TestimonialsSection />
       <ExperienceSection />
     </>
   )
