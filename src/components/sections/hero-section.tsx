@@ -122,10 +122,6 @@ const HeroSection = () => {
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-12 h-[740px] w-[min(1160px,92vw)] -translate-x-1/2 opacity-34 bg-[linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.12)_1px,transparent_1px)] bg-size-[58px_58px,58px_58px] bg-center mask-[radial-gradient(circle_at_center,rgba(0,0,0,0.98)_0,rgba(0,0,0,0.96)_54%,rgba(0,0,0,0.36)_79%,transparent_100%)]"
       />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-14 h-[700px] w-[min(980px,84vw)] -translate-x-1/2 opacity-82 bg-[radial-gradient(circle_at_center,rgba(0,156,196,0.32)_0,rgba(0,156,196,0.18)_12%,rgba(0,156,196,0)_32%),radial-gradient(circle_at_center,rgba(255,255,255,0.1)_0,rgba(255,255,255,0.05)_16%,rgba(255,255,255,0)_38%)] mask-[radial-gradient(circle_at_center,rgba(0,0,0,0.98)_0,rgba(0,0,0,0.94)_48%,rgba(0,0,0,0.56)_74%,transparent_100%)]"
-      />
       <div className="pointer-events-none absolute -top-24 left-1/2 h-120 w-232 -translate-x-1/2 rounded-full bg-[#009CC4]/10 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-48 -right-32 h-104 w-104 rounded-full bg-white/5 blur-3xl" />
 
